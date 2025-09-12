@@ -1,7 +1,7 @@
 *{
   margin: 0px;
   padding: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: poppins;
 }
 .header{
     display: flex;
@@ -29,7 +29,7 @@
     height: 100svh;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    /* gap: 20px; */
     align-items: end;
     background-color: #0A192F;
     transition: left 0.8s linear;
@@ -41,6 +41,7 @@
     border-radius: 5px;
     width: 100%;
     color: #ffffff;
+    font-size: 18px;
 }
 .menu_options a:hover{
     color: #FFC51E;
@@ -61,7 +62,6 @@ span{
 .name{
     color: #FFC51E;
     font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
     text-decoration: none;
 }
@@ -115,7 +115,8 @@ span{
 .explore{
     color: #FFC51E;
     border: 3px groove white;
-    padding: 10px; width: 100px;
+    padding: 10px; 
+    width: 100px;
     text-align: center; 
     border-radius: 20px; 
     font-size: 20px;
@@ -123,10 +124,22 @@ span{
     animation: anime1 0.8s linear 1;
      text-decoration: none;
 }
-.explore:hover{
+.explore:hover, .explore1:hover{
     /* background-color: #FFC51E;
     color: #0A192F; */
     box-shadow: 0px 0px 10px 0px grey;
+}
+.explore1{
+    color: #FFC51E;
+    border: 3px groove white;
+    padding: 5px; 
+    width: 60px;
+    text-align: center; 
+    border-radius: 20px; 
+    font-size: 18px;
+    cursor: pointer;
+    animation: anime1 0.8s linear 1;
+     text-decoration: none;
 }
  @keyframes anime1 {
    from{
@@ -217,9 +230,9 @@ span{
     align-items: center;
     /* justify-content: center; */
     padding: 50px 20px;
-    gap: 30px;
+    gap: 25px;
     opacity: 1;
-    border: 1px solid grey;
+    border: 3px solid grey;
 }
 .p1:hover{
     box-shadow: 0px 0px 10px 0px grey;
@@ -364,7 +377,7 @@ span{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 20px;
+  gap: 50px 20px;
 }
 .touch{
   display: flex;
@@ -423,7 +436,7 @@ button:hover{
 }
 @media (min-width:320px) and (max-width:768px) {
     .home{
-        padding-top: 250px;
+        padding-top: 150px;
     }
     .photo{
         height: 200px;
@@ -498,7 +511,7 @@ button:hover{
       padding: 50px 20px;
     }
 }
-@media (min-width:768px) {
+@media (min-width:770px) {
     .home{
         padding-top: 180px;
     }
